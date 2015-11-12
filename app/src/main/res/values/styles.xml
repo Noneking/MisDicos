@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="A1TextViewGrupo"></style>
+
+    <style name="A1TextViewTituloDisco">Titulo del disco:</style>
+
+    <style name="A1ButtomAñadir"></style>
+
+    <style name="A1ButtomEliminar"></style>
+
+</resources>

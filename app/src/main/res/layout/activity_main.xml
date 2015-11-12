@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Grupo"
+        android:id="@+id/A1TextViewGrupo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        style="@style/A1TextViewGrupo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/A1EditTextGrupo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/A1TextViewGrupo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Titulo del Disco"
+        android:id="@+id/A1TextViewTituloDisco"
+        android:layout_below="@+id/A1EditTextGrupo"
+        android:layout_alignParentStart="true"
+        style="@style/A1TextViewTituloDisco" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/A1EditTextTituloDisco"
+        android:layout_below="@+id/A1EditTextGrupo"
+        android:layout_alignEnd="@+id/A1EditTextGrupo"
+        android:layout_toEndOf="@+id/A1TextViewTituloDisco" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir"
+        android:id="@+id/A1ButtomAñadir"
+        android:onClick="añadir"
+        android:layout_below="@+id/A1EditTextTituloDisco"
+        android:layout_alignParentStart="true"
+        style="@style/A1ButtomAñadir" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:id="@+id/A1ButtomEliminar"
+        android:onClick="borrar"
+        android:layout_alignTop="@+id/A1ButtomAñadir"
+        android:layout_alignEnd="@+id/A1EditTextTituloDisco"
+        style="@style/A1ButtomEliminar" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/A1ListView"
+        android:layout_below="@+id/A1ButtomAñadir"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
